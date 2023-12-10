@@ -23,7 +23,7 @@ func TestCategoryService_GetNotFound(t *testing.T) {
 
 func TestCategoryService_GetSuccess(t *testing.T) {
 	category := entity.Category{
-		Id:   "1",
+		Id:   "2",
 		Name: "Laptop",
 	}
 	categoryRepository.Mock.On("FindById", "2").Return(category)
